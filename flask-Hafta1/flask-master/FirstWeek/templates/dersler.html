@@ -1,0 +1,123 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="mb-4">Hoş Geldiniz, Ahmet</h1>
+            
+            <!-- İstatistik Kartları -->
+            <div class="row mb-4">
+                <div class="col-md-3">
+                    <div class="card bg-primary text-white">
+                        <div class="card-body">
+                            <h5 class="card-title">Toplam Ders</h5>
+                            <h2 class="display-4">16</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-success text-white">
+                        <div class="card-body">
+                            <h5 class="card-title">Bu Dönem</h5>
+                            <h2 class="display-4">6</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-info text-white">
+                        <div class="card-body">
+                            <h5 class="card-title">Sonraki Dönem</h5>
+                            <h2 class="display-4">10</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-warning text-white">
+                        <div class="card-body">
+                            <h5 class="card-title">Ortalama</h5>
+                            <h2 class="display-4">8,6</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2>Derslerim</h2>
+                <a href="/ders/ekle" class="btn btn-primary">
+                    <i class="bi bi-plus-circle"></i> Yeni Ders Ekle
+                </a>
+            </div>
+
+            <div class="row">
+                <!-- Örnek Ders Kartı 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Veritabanı Sistemleri</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Kodu: CSE304</h6>
+                            <p class="card-text">Bu derste SQL, ER diyagramları ve ilişkisel veritabanı yapıları öğretilmektedir.</p>
+                            <span class="badge bg-primary">3 Kredili</span>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-pencil"></i> Düzenle
+                                </a>
+                                <a href="#" class="btn btn-outline-danger btn-sm">
+                                    <i class="bi bi-trash"></i> Sil
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Örnek Ders Kartı 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Programlama</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Kodu: CSE306</h6>
+                            <p class="card-text">HTML, CSS, JavaScript ve Django/Flask kullanarak web uygulamaları geliştirme.</p>
+                            <span class="badge bg-success">3 Kredili</span>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-pencil"></i> Düzenle
+                                </a>
+                                <a href="#" class="btn btn-outline-danger btn-sm">
+                                    <i class="bi bi-trash"></i> Sil
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Örnek Ders Kartı 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Yapay Zeka</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Kodu: CSE408</h6>
+                            <p class="card-text">Makine öğrenmesi, karar ağaçları ve sinir ağları gibi temel konulara giriş.</p>
+                            <span class="badge bg-info">3 Kredili</span>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-pencil"></i> Düzenle
+                                </a>
+                                <a href="#" class="btn btn-outline-danger btn-sm">
+                                    <i class="bi bi-trash"></i> Sil
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

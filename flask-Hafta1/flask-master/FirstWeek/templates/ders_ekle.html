@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0"><i class="bi bi-journal-plus"></i> Yeni Ders Ekle</h5>
+                </div>
+                <div class="card-body">
+                    <form method="get" action="/ders/ekle">
+                        <div class="mb-3">
+                            <label for="baslik" class="form-label">Ders Adı</label>
+                            <input type="text" class="form-control" id="baslik" name="baslik" placeholder="Ders adını yazın" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="kod" class="form-label">Ders Kodu</label>
+                            <input type="text" class="form-control" id="kod" name="kod" placeholder="Örn: CSE101" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="kredi" class="form-label">Kredi</label>
+                            <select class="form-select" id="kredi" name="kredi" required>
+                                <option value="1">1 Kredi</option>
+                                <option value="2">2 Kredi</option>
+                                <option value="3">3 Kredi</option>
+                                <option value="4">4 Kredi</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="aciklama" class="form-label">Açıklama</label>
+                            <textarea class="form-control" id="aciklama" name="aciklama" rows="6" placeholder="Dersle ilgili kısa bir açıklama yazın"></textarea>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <a href="/dersler" class="btn btn-outline-secondary">
+                                <i class="bi bi-arrow-left"></i> Geri Dön
+                            </a>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="bi bi-save"></i> Kaydet
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

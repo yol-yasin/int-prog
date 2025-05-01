@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="mb-4">
+        <h2 class="fw-bold">Merhaba Ahmet 👋</h2>
+        <p class="text-muted">Bugün neler yapmak istersiniz?</p>
+    </div>
+    <div class="row mb-5">
+        <div class="col-md-3">
+            <div class="bg-light p-4 rounded shadow-sm">
+                <p class="text-muted mb-1">Toplam Ders</p>
+                <h3>6</h3>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="bg-light p-4 rounded shadow-sm">
+                <p class="text-muted mb-1">Günlük Sayısı</p>
+                <h3>24</h3>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="bg-light p-4 rounded shadow-sm">
+                <p class="text-muted mb-1">Toplam Kredi</p>
+                <h3>18</h3>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="bg-light p-4 rounded shadow-sm">
+                <p class="text-muted mb-1">Son Giriş</p>
+                <h3>1 gün önce</h3>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-between mb-4">
+        <h4>Hızlı Erişim</h4>
+        <div>
+            <a href="/ders/ekle" class="btn btn-outline-primary me-2">
+                <i class="bi bi-plus-circle"></i> Ders Ekle
+            </a>
+            <a href="/gunluk/ekle" class="btn btn-outline-success">
+                <i class="bi bi-journal-plus"></i> Günlük Yaz
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-header bg-white">
+                    <h5 class="mb-0">Takvim</h5>
+                </div>
+                <div class="card-body">
+                    <p class="text-muted">Buraya bir takvim yerleştirilebilir (geliştirilebilir).</p>
+                    <div class="text-center">
+                        <i class="bi bi-calendar display-1 text-primary"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-header bg-white">
+                    <h5 class="mb-0">Son Etkinlikler</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <span class="fw-bold">Yeni ders eklendi:</span> "Matematik II" <br>
+                            <small class="text-muted">1 gün önce</small>
+                        </li>
+                        <li class="mb-3">
+                            <span class="fw-bold">Günlük yazıldı:</span> "Bugün çok yoğundu..." <br>
+                            <small class="text-muted">2 gün önce</small>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
